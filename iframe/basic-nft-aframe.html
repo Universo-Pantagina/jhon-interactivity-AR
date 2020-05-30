@@ -1,4 +1,5 @@
-<script src='../resources//aframe-v1.0.4.min.js'></script>
+	
+<script src="../resources//aframe-v1.0.4.min.js"></script>
 
 <style>
   .arjs-loader {
@@ -21,24 +22,32 @@
   }
 </style>
 
-<script src="../resources/aframe-ar-nft.js"></script>
+<!-- rawgithack development URL -->
+<script src='../resources/aframe-ar-nft.js'></script>
 
 <body style='margin : 0px; overflow: hidden;'>
    <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
-    <div>Cargando el modelo...</div>
+    <div>Espere un poco...</div>
   </div>
     <a-scene
-        vr-mode-ui='enabled: false;'
+        vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <!-- if you are hosting on localhost url='../resources/dataNFT/pinball' on gh-pages url='https://kalwalt.github.io/kalwalt-interactivity-AR/resources/dataNFT/pinball' -->
+        <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
-            type='nft' url='../resources/dataNFT/earth'
+            type='nft' url='https://YhonLimon.github.io/jhon-interactivity-AR/resources/dataNFT/earth'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-box position='45 45 27.5' scale='90 90 90' material='opacity: 0.5;'></a-box>
+            <a-entity
+                gltf-model='../resources/models/earth.gltf'
+                scale="5 5 5"
+                position="100 100 0"
+                >
+            </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
-</body
+</body>
+
+
