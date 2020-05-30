@@ -22,7 +22,7 @@
 </style>
 
 <!-- rawgithack development URL -->
-<script src="../resources/aframe-ar-nft.js"></script>
+<script src='../resources/aframe-ar-nft.js'></script>
 
 <body style='margin : 0px; overflow: hidden;'>
    <!-- minimal loader shown until image descriptors are loaded -->
@@ -30,7 +30,7 @@
     <div>Espere un poco...</div>
   </div>
     <a-scene
-        vr-mode-ui='enabled: false;'
+        vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
@@ -39,7 +39,7 @@
             type='nft' url="../resources/dataNFT/earth"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
-                gltf-model="../resources/models/earth.gltf"
+                gltf-model='../resources/models/earth.gltf'
                 scale="5 5 5"
                 position="100 100 0"
                 >
