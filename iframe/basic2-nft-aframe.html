@@ -1,36 +1,49 @@
-	
-<script src="../resources//aframe-v1.0.4.min.js"></script>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/dev/aframe/build/aframe-ar.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
 <style>
-  .arjs-loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
+  .button {
+    background-color: #4CAF50; 
+    border: none;
     color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid rgba(9, 148, 28, 0.541);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
-</style>
-
+  
+  </style>
+                                                                                               
 <!-- rawgithack development URL -->
 <script src='../resources/aframe-ar-nft.js'></script>
+                                                                                                  
 
-<body style='margin : 0px; overflow: hidden;'>
-   <!-- minimal loader shown until image descriptors are loaded -->
-  <div class="arjs-loader">
-    <div>Espere un poco...</div>
-  </div>
-    <a-scene
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<body style='margin : 0px; overflow: hidden;'>                                                  
+                                                       
+    <a-scene 
+      embedded 
+      renderer="logarithmicDepthBuffer: true;"
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" 
+      vr-mode-ui="enabled: false">   
+    
+             
+<a-nft type='nft' 
+       url='https://yhonlimon.github.io/jhon-interactivity-AR/resources/dataNFT/earthTexture' 
+       smooth='true' 
+       smoothCount='10' 
+       smoothTolerance='0.01' 
+       smoothThreshold='5'>
+   
+<a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
@@ -51,5 +64,3 @@
 		<a-entity camera></a-entity>
     </a-scene>
 </body>
-
-
