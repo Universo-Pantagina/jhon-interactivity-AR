@@ -20,7 +20,10 @@
   }
   
   </style>
-
+                                                                                               
+<!-- rawgithack development URL -->
+<script src='../resources/aframe-ar-nft.js'></script>
+                                                                                                  
 <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
     <button class="button" id="btn1">Play Sound</button>
     <button class="button" id="btn2">Stop Sound</button>
@@ -32,15 +35,24 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<body style='margin : 0px; overflow: hidden;'>
-
-    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">   
-    <a-marker preset="hiro">
+<body style='margin : 0px; overflow: hidden;'>                                                  
+  
+  
+  
+                                                       
+    <a-scene 
+      embedded 
+      renderer="logarithmicDepthBuffer: true;"
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" 
+      vr-mode-ui="enabled: false">   
+    
+             
+<a-nft type='nft' url='https://yhonlimon.github.io/jhon-interactivity-AR/resources/dataNFT/earthTexture' smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
     <video id="mivideo" crossOrigin="anonymous" playsinline webkitplaysinline autoplay controls muted src="1.mp4"></video>
     <a-video src="#mivideo" position="0 0 0" scale="3 2 2" rotation="270 0 0" ></a-video>
-   
-   <script> 
-      var m = document.querySelector("a-marker")
+    
+  <script> 
+      var m = document.querySelector("a-nft")
       m.addEventListener("markerFound", (e)=>{
       console.log("found")
       var v = document.querySelector('#mivideo').play();
@@ -73,7 +85,8 @@ document.getElementById("btn4").addEventListener("click", (e)=>{
 
 
      </script>
-      </a-marker>
+      </a-nft>
+                                                         
       <a-entity camera></a-entity>
     </a-scene>
 </body>
