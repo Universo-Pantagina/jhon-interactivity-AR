@@ -44,10 +44,16 @@
 		
                 gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/4.gltf'
                 scale="20 20 20"
-                position="100 100 0"
-		animation="EsferaAction" 
+                position="100 100 0" 
                 >
-            </a-entity>
+		    </a-animation>
+            		attribute="material.opacity"
+			dur="500" 
+			from="0.20"
+			to="1"
+			direction="alternate"
+			repeat="indefinite"
+		    </a-animation>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
