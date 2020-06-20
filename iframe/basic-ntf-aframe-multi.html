@@ -4,6 +4,48 @@
 
 
 <style>
+	
+	
+	
+  .button {
+	  background-color:#0000FF;
+	  border: none;
+	  color: #white;
+	  padding: 7px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 12px;
+	  margin: 4px 2px;
+	  cursor: pointer; 
+	  border-radius: 12px;
+	  border: 2px solid #rgba(9, 148, 28, 0.541);
+	  box-shadow: 0 8px 12px #rgba(0, 0, 0, 0.2), 0 6px 20px 0 #rgba(0, 0, 0, 0.19);
+  }
+
+   .wrap {
+	   border: solid 1px #ccc;
+	   padding: 10px;
+	   text-align: center;
+}
+	
+  #output {
+	  display: inline-block;
+	  top: 4px;
+	  position: relative;
+	  border: dotted 1px #ccc;
+	  padding: 2px; 
+}
+	
+  .button {
+	  border: solid 2px #ccc;
+}
+	
+	
+	
+	
+	
+	  
   .arjs-loader {
     height: 100%;
     width: 100%;
@@ -22,6 +64,7 @@
     font-size: 1.25em;
     color: white;
   }
+	
 </style>
 
 <!-- rawgithack development URL -->
@@ -43,8 +86,10 @@
 	       	       
 	    type='nft' url='https://yhonlimon.github.io/jhon-interactivity-AR/resources/dataNFT/SOL_NASA_CUADRADO'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-entity
+           
 		
+		<a-entity
+		id="SOL_NASA_6"
                 gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf'
                 scale="17 17 17"
                 position="0 10 0"
@@ -53,6 +98,24 @@
 		                >
             </a-entity>
         </a-nft>
+	    
+	    
+	    
+	    
+	    <button class="button" id="btn1">Modelo 1</button>
+<script>	    
+document.getElementById("btn1").addEventListener("click", (e)=>{
+var el = document.querySelector('#SOL_NASA_6');
+el.setAttribute("obj-model", 'obj:url(TU MODELO3D.obj);mtl:url(TU MODELO3D.mtl)');
+el.setAttribute("scale",'.10 .10 .10'); })
+</script>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 		<a-entity camera></a-entity>
     </a-scene>
 </body>
