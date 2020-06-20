@@ -46,7 +46,7 @@
             <a-entity
 		
                 gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf'
-                scale="50 50 50"
+                scale="30 30 30"
                 position="0 0 0"
 		
 		      
@@ -62,33 +62,3 @@
 
 
 
-
-<!-- CAMERA with wasd controls and circle cursor -->
-  <a-camera fly look-controls wasd-controls position="17.020 16.700 7.958" rotation="-34.149 89.382 0.000">  
-    <a-entity 
-      cursor="fuse: true; fuseTimeout: 500"
-      position="0 0 -1"
-      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-      material="color: black; shader: flat">
-    </a-entity>
-  </a-camera>
-
-  <a-assets>
-
-
-<!-- script change model position -->
-<script>
-
-  $( document ).ready(function() {
-
-    var xAxis = new THREE.Vector3(1,0,0);
-
-    setTimeout(function(){
-      console.log("rotation: done");
-
-      document.querySelector('#_afb_animation').sceneEl.object3D.translateY(20);
-
-    }, 3000);
-
-  });
-</script>
