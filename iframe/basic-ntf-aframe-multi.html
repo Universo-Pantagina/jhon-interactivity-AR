@@ -151,14 +151,14 @@
 <script>	    
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("gltf-model", 'gltf:url(resources/models/SOL_NASA_6.gltf)');
+el.setAttribute("obj-model", 'obj:url(../resources/models/SOLobj.obj); mtl:url(../resources/models/mtl/SOLobj.mtl)');
 el.setAttribute("scale",'17 17 17'); 
 })
 	
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#eartht');
-el.setAttribute("gltf-model", 'gltf:url(resources/models/eartht.gltf)');
+el.setAttribute("obj-model", 'obj:url(../resources/models/earthobj.obj); mtl:url(../resources/models/mtl/earthobj.mtl)');
 el.setAttribute("scale",'100 100 100'); 
 })
 	
