@@ -75,6 +75,39 @@
   <div class="arjs-loader">
     <div>Espere un poco...</div>
   </div>
+	
+	
+	
+	
+		
+	
+	
+	
+	
+ <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1;'>
+     <button class="button" id="btn1">Modelo 1</button>
+     <button class="button" id="btn2">Modelo 2</button>
+     <button class="button" id="btn3">Modelo 3</button>
+  </div>
+
+
+
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
@@ -93,31 +126,65 @@
                 gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf'
                 scale="17 17 17"
                 position="0 10 0"
+		                > </a-entity>
 		
-		      
-		                >
-            </a-entity>
+			<a-entity
+		id="eartht"
+                gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf'
+                scale="17 17 17"
+                position="0 10 0"
+		                > </a-entity>
+		
+		
         </a-nft>
-	    
-	    
-	    
-	    
-	    <button class="button" id="btn1">Modelo 1</button>
+	    	    
+		<a-entity camera></a-entity>
+    </a-scene>
+	
+
+
+	
+	
+	
+	
+	
 <script>	    
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("obj-model", 'obj:url(TU MODELO3D.obj);mtl:url(TU MODELO3D.mtl)');
+el.setAttribute("gltf-model", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf)');
 el.setAttribute("scale",'.10 .10 .10'); })
+	
+
+document.getElementById("btn1").addEventListener("click", (e)=>{
+var el = document.querySelector('#eartht');
+el.setAttribute("obj-model", 'obj:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf)');
+el.setAttribute("scale",'.10 .10 .10'); })
+	
+	
+	
+	
 </script>
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-		<a-entity camera></a-entity>
-    </a-scene>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </body>
 
 
