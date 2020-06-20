@@ -117,21 +117,21 @@
         <a-nft
             
 	       	       
-	    type='nft' url='https://yhonlimon.github.io/jhon-interactivity-AR/resources/dataNFT/SOL_NASA_CUADRADO'
+	    type='nft' url='https://yhonlimon.github.io/jhon-interactivity-AR/resources/dataNFT/eartht'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
            
 		
 		<a-entity
 		id="SOL_NASA_6"
-                gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf'
+                gltf-model='../resources/models/SOL_NASA_6.gltf'
                 scale="17 17 17"
                 position="0 10 0"
 		                > </a-entity>
 		
 			<a-entity
 		id="eartht"
-                gltf-model='https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf'
-                scale="17 17 17"
+                gltf-model='../resources/models/eartht.gltf'
+                scale="100 100 100"
                 position="0 10 0"
 		                > </a-entity>
 		
@@ -159,7 +159,7 @@ el.setAttribute("scale",'17 17 17');
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#eartht');
 el.setAttribute("gltf-model", 'gltf:url(../resources/models/eartht.gltf)');
-el.setAttribute("scale",'40 40 40'); 
+el.setAttribute("scale",'100 100 100'); 
 })
 	
 	
