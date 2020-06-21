@@ -166,9 +166,9 @@ el.setAttribute("scale",'25 25 25');
 	
 document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
+el.setAttribute("obj-model", 'obj:url(TU MODELO3D.obj);mtl:url(TU MODELO3D.mtl)');
 el.setAttribute("scale",'13 13 13');
-el.setAttribute('rotation', '${this.x}, ${this.y}, ${this.z}');
-
+el.setAttribute('rotation', {x: 15, y: 30, z: 90});
 
 })
 	
