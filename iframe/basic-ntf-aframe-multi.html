@@ -130,7 +130,12 @@
 		id="SOL_NASA_6"
                 gltf-model='../resources/models/SOL_NASA_6.gltf'
                 scale="13 13 13"
-                position="0 10 0"		  
+                position="0 10 0"
+		
+  		<a-animation attribute="rotation" begin="rotate" to="0 360 0">
+		</a-animation>
+
+			  
 		                > </a-entity>
 		
 			
@@ -165,6 +170,7 @@ document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
 el.setAttribute("scale",'13 13 13');
 el.setAttribute('rotation', '${this.x}, ${this.y}, ${this.z}');
+
 
 })
 	
