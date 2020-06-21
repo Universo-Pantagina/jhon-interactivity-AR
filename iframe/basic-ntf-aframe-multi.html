@@ -78,12 +78,6 @@
 	
 	
 	
-	
-<a-scene>
-  <a-sound src="src: url(../resources/models/1.mp3)" autoplay="true" position="-100 -112 -500"></a-sound>
-</a-scene>
-
-
 
 
 	
@@ -98,6 +92,14 @@
   </div>
 	
 	
+	
+	
+	
+
+	
+<audio autoplay loop  id="playAudio">
+    <source src='../resources/models/1.mp3'>
+</audio>
 	
 	
 		
@@ -132,6 +134,7 @@
 	
 	
     <a-scene
+	     
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
