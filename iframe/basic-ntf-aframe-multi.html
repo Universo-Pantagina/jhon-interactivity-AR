@@ -3,6 +3,13 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe-ar.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
+
+<audio autoplay>
+  	<source src="../resources/models/1.mp3" type="audio/mp3">
+  	Tu navegador no soporta HTML5 audio.
+</audio>
+
+
 <style>
 	
 	
@@ -166,9 +173,7 @@ el.setAttribute("scale",'25 25 25');
 	
 document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute('rotation', {x: 15, y: 30, z: 90});
-el.setAttribute("scale",'13 13 13');
-el.setAttribute("sound", 'sound:url:(../resources/models/1.mp3); autoplay: true');
+el.setAttribute("scale",'4 4 4');
 
 
 })
