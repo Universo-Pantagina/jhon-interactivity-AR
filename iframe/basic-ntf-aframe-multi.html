@@ -85,8 +85,8 @@
 	
 	
  <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1;'>
-     <button class="button" id="btn1">Modelo 1</button>
-     <button class="button" id="btn2">Modelo 2</button>
+     <button class="button" id="btn1">El Sol</button>
+     <button class="button" id="btn2">La Tierra</button>
 
   </div>
 
@@ -148,7 +148,7 @@
 <script>	    
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("obj-model", 'obj:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOLobj.obj)');
+el.setAttribute("gltf-model-next", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf)');
 el.setAttribute("scale",'10 10 10');
 
 })
@@ -156,8 +156,8 @@ el.setAttribute("scale",'10 10 10');
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("gltf-model-next", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/SOL_NASA_6.gltf)');
-el.setAttribute("scale",'10 10 10');
+el.setAttribute("gltf-model-next", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf)');
+el.setAttribute("scale",'17 17 17');
 })
 	
 	
