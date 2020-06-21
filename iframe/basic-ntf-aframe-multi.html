@@ -91,9 +91,9 @@
 	
  <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1;'>
      
-     <button class="button" id="btn1">Sol</button>
-     <button class="button" id="btn2">Más grande</button>
-     <button class="button" id="btn3">Rotar Sol</button>
+     <button class="button" id="btn1">Pequeño</button>
+     <button class="button" id="btn2">Mediano</button>
+     <button class="button" id="btn3">Grande</button>
 	 
   </div>
 
@@ -117,7 +117,7 @@
 		<a-entity
 		id="SOL_NASA_6"
                 gltf-model='../resources/models/SOL_NASA_6.gltf'
-                scale="13 13 13"
+                scale="17 17 17"
                 position="0 10 0"
 
 
@@ -146,7 +146,7 @@
 
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("scale",'13 13 13');
+el.setAttribute("scale",'8 8 8');
 
 
 })
@@ -154,7 +154,7 @@ el.setAttribute("scale",'13 13 13');
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("scale",'25 25 25');
+el.setAttribute("scale",'17 17 17');
 
 	
 })
@@ -162,7 +162,7 @@ el.setAttribute("scale",'25 25 25');
 	
 document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("scale",'4 4 4');
+el.setAttribute("scale",'25 25 25');
 
 
 })
