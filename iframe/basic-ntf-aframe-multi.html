@@ -129,7 +129,7 @@
 		<a-entity
 		id="SOL_NASA_6"
                 gltf-model='../resources/models/SOL_NASA_6.gltf'
-                scale="17 17 17"
+                scale="13 13 13"
                 position="0 10 0"		  
 		                > </a-entity>
 		
@@ -164,10 +164,17 @@ el.setAttribute("scale",'25 25 25');
 document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
 el.setAttribute("scale",'13 13 13');
-el.setAttribute("rotation", {x: 0, y: 180, z: 0});
+
+const el = document.createElement('btn3');
+el.setAttribute('from', '0 0 0');
+el.setAttribute('to', '360 180 0');
+el.setAttribute('id', 'cubeAnimation');
+el.setAttribute('attribute', 'rotation');
+el.setAttribute('dur', '1000');
+el.setAttribute('begin', 'wuerfeln');
+cube.appendChild(el);
 
 })
-	
 	
 	
 </script>
