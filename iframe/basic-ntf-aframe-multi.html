@@ -129,10 +129,15 @@
 		id="SOL_NASA_6"
                 gltf-model='../resources/models/SOL_NASA_6.gltf'
                 scale="17 17 17"
-                position="0 10 0"
+                position="0 10 0"		  
 		                > </a-entity>
 		
-		
+		<a-entity
+		id="eartht"
+                gltf-model='../resources/models/eartht.gltf'
+                scale="10 10 10"
+                position="0 10 0"		  
+		                > </a-entity>
 		
 		
         </a-nft>
@@ -155,7 +160,7 @@ el.setAttribute("scale",'30 30 30');
 	
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
-var el = document.querySelector('#SOL_NASA_6');
+var el = document.querySelector('#eartht');
 el.setAttribute("gltf-model-next", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf)');
 el.setAttribute("scale",'40 40 40');
 })
