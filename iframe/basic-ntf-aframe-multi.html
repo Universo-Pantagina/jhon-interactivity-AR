@@ -131,13 +131,6 @@
                 position="0 10 0"		  
 		                > </a-entity>
 		
-		<a-entity
-		id="eartht"
-                gltf-model='../resources/models/eartht.gltf'
-                scale="10 10 10"
-                position="0 10 0"		  
-		                > </a-entity>
-		
 			
         </a-nft>
 	    	    
@@ -150,7 +143,7 @@
 <script>	    
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("gltf-model-next", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf)');
+el.setAttribute("gltf-model", 'gltf:url(https://yhonlimon.github.io/jhon-interactivity-AR/resources/models/eartht.gltf)');
 el.setAttribute("scale",'2 2 2');
 
 })
@@ -158,8 +151,8 @@ el.setAttribute("scale",'2 2 2');
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("gltf-model-next", 'gltf:url(../resources/models/SOL_NASA_6.gltf)');
-el.setAttribute("scale",'50 50 50');
+el.setAttribute("fbx-model", 'fbx:url(../resources/models/gemini3.fbx)');
+el.setAttribute("scale",'20 20 20');
 })
 	
 	
