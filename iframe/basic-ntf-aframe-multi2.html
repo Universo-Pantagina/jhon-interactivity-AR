@@ -65,6 +65,34 @@
 </style>
 	
 	
+
+
+
+
+<a-scene>     
+<a-assets>            
+<a-asset-item id="earthobj" src="../resources/models/earthobj.obj">
+</a-asset-item>            
+<a-asset-item id="earthmtl" src="../resources/models/mtl/earthobj.mtl">
+</a-asset-item>      
+</a-assets>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- rawgithack development URL -->
 <script src='../resources/aframe-ar-nft.js'></script>
 <body style='margin : 0px; overflow: hidden;'>
@@ -119,11 +147,14 @@
 	  
 <script>
 
-
+<a-entity obj-model="obj: #moore-obj; mtl: #moore-mtl"  scale="1 1 1"  rotation="0 0 0"   position="1 1 1">
+</a-entity>  
+</a-scene> 
+	
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("obj-model", 'obj:url(../resources/models/earthobj.obj);mtl:url(../resources/models/mtl/earthobj.mtl)');
-el.setAttribute("scale",'1000 1000 1000');
+el.setAttribute("obj-model", 'obj: #earthobj; mtl:earthmtl');
+el.setAttribute("scale",'100 100 100');
 
 
 })
