@@ -105,25 +105,13 @@
 		id="SOL_NASA_6"
                 gltf-model='../resources/models/SOL_NASA_6.gltf'
                 scale="17 17 17"
-                position="0 10 0"
-
-
-			  
-		                > </a-entity>
+                position="0 10 0"> 
 		
 			
-        </a-nft>
-	    	    
-		<a-entity camera></a-entity>
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-    </a-scene>
+                </a-nft>
+		<a-entity camera>
+		</a-entity> 
+		</a-scene>
 	
 
 
@@ -133,7 +121,7 @@
 
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("obj-model", 'obj:url(TU MODELO3D.obj);mtl:url(TU MODELO3D.mtl)');
+el.setAttribute("obj-model", 'obj:url(../resources/models/earth.obj);mtl:url(../resources/models/mtl/earthobj.mtl)');
 el.setAttribute("scale",'8 8 8');
 
 
