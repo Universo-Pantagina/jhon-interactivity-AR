@@ -1,5 +1,5 @@
 	
-<script src="../resources//aframe-v1.0.4.min.js"></script>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe-ar.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
@@ -153,7 +153,7 @@
 	
 document.getElementById("btn1").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute("obj-model", 'obj: #earthobj; mtl:earthmtl');
+el.setAttribute("obj-model", 'obj:url(../resources/models/earthobj.obj);mtl:url(../resources/models/mtl/earthobj.mtl)');
 el.setAttribute("scale",'100 100 100');
 
 
@@ -162,7 +162,6 @@ el.setAttribute("scale",'100 100 100');
 
 document.getElementById("btn2").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute();
 el.setAttribute("scale",'17 17 17');
 	
 })
@@ -170,7 +169,6 @@ el.setAttribute("scale",'17 17 17');
 	
 document.getElementById("btn3").addEventListener("click", (e)=>{
 var el = document.querySelector('#SOL_NASA_6');
-el.setAttribute(gltf-model='../resources/models/eartht.gltf');
 el.setAttribute("scale",'100 100 100');
 
 
